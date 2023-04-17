@@ -1,0 +1,22 @@
+dateModified: 1681768448
+email:
+  fromEmail: mail@shaunparker.me
+  fromName: 'taco teca'
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    9dcb8dc8-1766-47de-86c0-f52ea0783e4c: 'taco teca' # taco teca
+    0292b7f6-7858-414a-ad07-be3a22e31246: 'taco teca' # taco teca
+    dab909ba-2632-4988-922f-1d10e6a3710a: Common # Common
+system:
+  edition: solo
+  live: true
+  name: 'taco teca'
+  schemaVersion: 4.4.0.4
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
