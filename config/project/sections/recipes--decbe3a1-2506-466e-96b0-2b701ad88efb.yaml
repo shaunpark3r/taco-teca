@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: recipes
+name: Recipes
+propagationMethod: all
+siteSettings:
+  0292b7f6-7858-414a-ad07-be3a22e31246: # taco teca
+    enabledByDefault: true
+    hasUrls: true
+    template: recipes/_entry
+    uriFormat: 'recipes/{slug}'
+type: channel

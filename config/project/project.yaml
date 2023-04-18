@@ -1,13 +1,41 @@
-dateModified: 1681768448
+dateModified: 1681846975
 email:
   fromEmail: mail@shaunparker.me
   fromName: 'taco teca'
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  images:
+    hasUrls: true
+    name: Images
+    settings:
+      path: assets/images
+    type: craft\fs\Local
+    url: /assets/images/
 meta:
   __names__:
+    6b1338f8-fb64-49c9-ba89-48dbdb5563f8: Default # Default
+    06c84f63-2f79-4474-ac50-9955fe9c3768: Card # Card
+    7dc5097c-7bd8-496d-8a22-92e5005973f3: Recipe # Recipe
     9dcb8dc8-1766-47de-86c0-f52ea0783e4c: 'taco teca' # taco teca
+    18e73d8f-5ea3-40cf-90f5-398e366c6820: Assets # Assets
+    095d483e-a0b1-4090-aa5b-90f8df9fcbdd: Recipes # Recipes
     0292b7f6-7858-414a-ad07-be3a22e31246: 'taco teca' # taco teca
+    60559f14-8979-41fe-a063-fc49835a537e: Blog # Blog
+    81131e2a-c890-44c1-9627-94039b07d6df: Description # Description
+    45062542-303e-44c8-83c4-4e4b3e26d37c: 'Main Image' # Main Image
+    c4d6e620-437c-41a3-bcac-c40b293f1a72: 'Full Width' # Full Width
+    d280f4e0-920b-4bf8-8070-d41c41302a28: Default # Default
     dab909ba-2632-4988-922f-1d10e6a3710a: Common # Common
+    decbe3a1-2506-466e-96b0-2b701ad88efb: Recipes # Recipes
+plugins:
+  recipe:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
 system:
   edition: solo
   live: true

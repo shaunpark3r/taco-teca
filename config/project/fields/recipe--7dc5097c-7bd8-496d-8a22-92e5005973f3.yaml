@@ -1,0 +1,10 @@
+columnSuffix: rgmwccnr
+contentColumnType: text
+fieldGroup: 095d483e-a0b1-4090-aa5b-90f8df9fcbdd # Recipes
+handle: recipe
+instructions: null
+name: Recipe
+searchable: false
+translationKeyFormat: null
+translationMethod: none
+type: nystudio107\recipe\fields\Recipe

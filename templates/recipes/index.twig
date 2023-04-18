@@ -1,0 +1,29 @@
+{% extends "_layout.twig" %}
+
+{% block content %}
+    <div class="w-full">
+        {% set entries = craft.entries().section('recipes').all() %}
+        {% for entry in entries %}
+            <div class="p-10 w-full flex">
+                {% set image = entry.mainImage.one() %}
+                  <div class="w-1/2 lg:h-auto flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('{{ image.url }}');"></div>
+                  <div class="w-1/2 border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+                    <div class="mb-8">
+                      <h2 class="text-gray-900 font-bold text-xl mb-2">{{ entry.title }}</h2>
+                      <p class="text-gray-700 text-base">{{entry.recipe.description}}</p>
+                    </div>
+                    <div class="w-full">
+                        <div class="w-full flex mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <p>Cooking Time: {{entry.recipe.totalTime}}</p>
+                        </div>
+                        <a href="{{ entry.url }}" class="rounded-md bg-indigo-50 px-2.5 py-1.5 text-sm font-semibold text-indigo-600 shadow-sm hover:bg-indigo-100">View</a>
+                    </div>
+                  </div>
+              </div>
+        {% endfor %}
+
+    </div>
+{% endblock %}
